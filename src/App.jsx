@@ -1,8 +1,11 @@
+import './App.css'
 
 function App() {
 
   return (
-    <p>okgfy</p>
+    <header>
+      <h1 className="logo">okgfy</h1>
+    </header>
   )
 }
 

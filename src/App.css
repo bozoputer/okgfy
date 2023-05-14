@@ -1,0 +1,25 @@
+.logo {
+  font-family: "megazoid", sans-serif;
+  text-align: center;
+  font-size: clamp(5rem, 25vmin, 8rem);
+  margin-top: -1.5rem;
+  --bg-size: 400%;
+  --color-one: hsl(317, 45%, 52%);
+  --color-two: hsl(340, 95%, 50%);
+  background: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-one)
+  ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate-bg 8s infinite linear;
+}
+
+@keyframes animate-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
